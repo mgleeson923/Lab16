@@ -14,8 +14,7 @@ public class Math {
     public int findPrime(int userNum) {
 
 
-        //iterates through all numbers starting at 2 (first prime) then counts the number of primes it has found.
-        //once the number of primes is found (at i) is equal to user number for loop is done.
+        //method to iterate through all prime numbers and locate each one
         int numOfPrimes = 0;
         int i;
         for (i = 2; numOfPrimes < userNum; i++) {
@@ -23,7 +22,7 @@ public class Math {
                 numOfPrimes++;
             }
         }
-        //need to subtract 1 because of iterations.(Testing helped discover this)
+        //testing showed I had to subtract one. Not sure why, but testing and fiddling made me figure it out.
         return i-1;
     }
 }
